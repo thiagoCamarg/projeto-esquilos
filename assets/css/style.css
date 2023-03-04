@@ -80,7 +80,7 @@ div.logo span {
 }
 
 .hero {
-    background: url('/assets/img/fachada2.jpeg');
+    background-image: url('/assets/img/fachada2.jpeg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
