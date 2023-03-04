@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/esquilos.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b0e713adc6.js" crossorigin="anonymous"></script>
+    <title>Esquilos Café</title>
+</head>
+<body>
+
+        <header>
+            <div class="logo">
+                <img src="assets/img/esquilos.svg" alt="logo esquilo">
+                <span>ESQUILOS CAFÉ</span>
+            </div>
+            <!-- <i  id="menu-bar" class="material-icons">menu</i>-->
+            <nav class="nav-container"> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Informações</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section class="hero">
+                <h3>Comida Deliciosa em um Ambiente Natural e Pet Friendly</h3>
+            </section>
+
+            <section class="about">
+                <h2>Sobre nós</h2>
+                <p>Seja bem-vindo ao Esquilos Café, o lugar perfeito para desfrutar de uma deliciosa refeição rodeado pela natureza. Aqui, você encontrará um ambiente aconchegante e familiar que é perfeito para compartilhar momentos inesquecíveis com seus entes queridos.</p>
+
+                <p>Nosso café é um lugar pet friendly, então sinta-se à vontade para trazer o seu melhor amigo peludo para desfrutar de uma refeição deliciosa e relaxante em nossa companhia.</p>
+
+                <p>Nossos pratos são preparados com ingredientes frescos e selecionados, e nossos chefs estão sempre criando novas receitas deliciosas que irão surpreender seu paladar. Além disso, nossa ampla variedade de bebidas quentes e frias irá acompanhá-lo perfeitamente em qualquer ocasião.</p>
+
+                <p>Enquanto desfruta de sua refeição, não deixe de apreciar a beleza natural que nos rodeia. O Esquilos Café está localizado em um ambiente cercado por árvores e jardins, proporcionando um ambiente sereno e tranquilo para relaxar e recarregar suas energias.</p>
+
+                <p>Estamos ansiosos para recebê-lo no Esquilos Café, onde a comida deliciosa, a natureza exuberante e a hospitalidade acolhedora se unem para criar uma experiência inesquecível. Venha nos visitar em breve!</p>
+
+                <hr>   
+            </section>
+            <section class="container">
+                <h3>Galeria</h3>
+                <div class="image-container" >
+                    <div class="image"><img src="/assets/img/fachada.jpeg" alt=""></div>
+                    <div class="image"><img src="/assets/img/esp2.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/img/esp4.jpeg" alt=""></div>
+                    <div class="image"><img src="/assets/img/esp5.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/img/esp6.jpg" alt=""></div>
+                    <div class="image"><img src="/assets/img/esp7.jpg" alt=""></div>
+                </div>
+
+                <div class="popup-img">
+                    <span>&times;</span>
+                    <img src="assets/img/fachada.jpeg" alt="">
+                </div>
+            </section>
+
+            <section class="char-container">
+                <h3>Informações</h3>
+                <ul class="character">
+                    <li>
+                        <i class="fa-solid fa-location-dot">
+                        </i>
+                        <span>Localização</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Pet-Friendly</span>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-tree"></i>
+                        <span>Natureza</span>
+                    </li>
+                </ul>
+                
+            </section>
+
+
+    <footer>
+        <p>Site desenvolvido por <a href="#" target="_blank">Thiago Camargo Dev</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-img').style.display = 'block';
+                document.querySelector('.popup-img img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-img span').onclick = ()=>{
+            document.querySelector('.popup-img').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,400;12..72,700;12..72,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+:root{
+    --font-title: 'Truculenta', sans-serif;
+    --font-padrão: 'Poppins', sans-serif;
+
+    --color-primary: #f0cb94;
+    --color-secundary: #00a878;
+    --color-tertiary: #4A4238;
+    --color-details: #CEFF1A;
+
+    --text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.358);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-padrão);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.683);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    padding: 20px 50px;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+div.logo img{
+    width: 30px;
+}
+
+div.logo span {
+    align-self: center;
+    font-family: var(--font-title);
+    color: var(--color-tertiary);
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: var(--text-shadow);
+}
+
+.nav-container ul {
+    display: flex;
+}
+
+.nav-container ul li a{
+    color: var(--color-tertiary);
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-shadow: var(--text-shadow);
+    opacity: 0.9;
+}
+
+.nav-container ul li a:hover {
+    opacity: 1;
+    border: 2px solid #4A4238;
+    border-radius: 10px;
+}
+
+.nav-container ul li:first-child {
+    padding-left: 0;
+}
+.nav-container ul li:last-child {
+    padding-right: 0;
+}
+
+.hero {
+    background: url('/assets/img/fachada.jpeg') center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.hero h3 {
+    padding: 0 30px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 3px 1px #000000;
+}
+
+.about {
+    padding: 30px;
+    color: var(--color-tertiary);
+}
+
+.about h2 {
+    font-family: var(--font-title);
+    font-size: 3em;
+    text-align: center;
+    margin: 40px 0;
+    color: var(--color-tertiary);
+    text-shadow: var(--text-shadow);
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.about hr {
+    width: 200px;
+    margin: 80px auto;
+    border: 1px solid #4A4238;
+}
+
+.container {
+    position: relative;
+    background-color: #ddd;
+    min-height: 100vh;
+}
+
+.container h3 {
+    font-size: 2.5em;
+    font-family: var(--font-title);
+    padding: 20px;
+    color: var(--color-tertiary);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+}
+
+.container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .image-container .image {
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .image-container .image img:hover {
+    transform: scale(1.1);
+}
+
+.container .popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup-img span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+.char-container h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    color: var(--color-tertiary);
+    text-shadow: var(--text-shadow);
+}
+
+.character {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.character i {
+    font-size: 2em;
+    padding-top: 30px;
+    color: var(--color-tertiary);
+    text-shadow: var(--text-shadow);
+    cursor: pointer;
+}
+
+.character li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-tertiary);
+    text-shadow: var(--text-shadow);
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    padding: 15px;
+    color: var(--color-tertiary);
+    text-shadow: var(--text-shadow);
+}
+
+footer a {
+    color: var(--color-tertiary);
+    opacity: 0.9;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    div.logo {
+        padding-bottom: 20px;
+    }
+
+    .hero h3 {
+        padding: 100px 30px 0 30px;
+    }
+
+    .container .popup-img img {
+        width: 90%;
+    }
+}    
