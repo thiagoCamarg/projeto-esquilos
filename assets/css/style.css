@@ -200,23 +200,23 @@ div.logo span {
     transform: translate(-50%,-50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 750px;
+    width: 400px;
     object-fit: cover;
 }
 
 .char-container h3 {
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 30px;
     font-size: 2em;
     color: var(--color-tertiary);
     text-shadow: var(--text-shadow);
 }
 
 .character {
-    padding: 30px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 0 190px;
 }
 
 .character i {
@@ -231,10 +231,15 @@ div.logo span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    width: 200px;
+    height: 200px;
     color: var(--color-tertiary);
     text-shadow: var(--text-shadow);
     cursor: pointer;
+    border: 1px solid #4A4238;
+    border-radius: 4px;
 }
 
 footer {
@@ -255,7 +260,7 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
     }
@@ -268,6 +273,18 @@ footer a:hover {
     }
 
     .container .popup-img img {
-        width: 90%;
+        width: 100%;
     }
-}    
+    .character {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 548px) {
+    .nav-container {
+        flex-direction: column;
+        display: none;
+    }
+}
