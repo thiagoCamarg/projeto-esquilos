@@ -216,7 +216,7 @@ div.logo span {
 .character {
     display: flex;
     justify-content: space-between;
-    padding: 0 190px;
+    margin: 0 40px;
 }
 
 .character i {
