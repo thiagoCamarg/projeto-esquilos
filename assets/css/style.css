@@ -80,8 +80,8 @@ div.logo span {
 }
 
 .hero {
-    background-image: url('../img/fachada2.jpeg');
-    background-position: center center;
+    background: url('../img/fachada2.jpeg');
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
