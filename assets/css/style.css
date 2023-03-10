@@ -21,6 +21,7 @@
     font-family: var(--font-padrão);
     list-style-type: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 header {
