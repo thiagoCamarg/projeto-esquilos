@@ -2,8 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
+@font-face {
+    font-family: 'plant';
+    src: url('/assets/font/plant.otf');
+}
+
 :root{
-    --font-title: 'Truculenta', sans-serif;
+    --font-title: 'plant', sans-serif;
     --font-padrão: 'Poppins', sans-serif;
 
     --color-primary: #f0cb94;
@@ -38,6 +43,7 @@ header {
 div.logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     flex-shrink: 0;
 }
@@ -50,8 +56,7 @@ div.logo span {
     align-self: center;
     font-family: var(--font-title);
     color: var(--color-tertiary);
-    font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 2em;
     text-shadow: var(--text-shadow);
 }
 
@@ -223,7 +228,8 @@ i#burger {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
-    font-size: 2em;
+    font-family: var(--font-title);
+    font-size: 3em;
     color: var(--color-tertiary);
     text-shadow: var(--text-shadow);
 }
