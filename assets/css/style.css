@@ -54,7 +54,7 @@ div.logo img{
 
 div.logo span {
     align-self: center;
-    font-family: var(--font-title);
+    font-family: 'plant', sans-serif;
     color: var(--color-tertiary);
     font-size: 2em;
     text-shadow: var(--text-shadow);
@@ -116,7 +116,7 @@ i#burger {
 }
 
 .about h2 {
-    font-family: var(--font-title);
+    font-family: 'plant', sans-serif;
     font-size: 3em;
     text-align: center;
     margin: 40px 0;
@@ -151,7 +151,7 @@ i#burger {
 
 .container h3 {
     font-size: 2.5em;
-    font-family: var(--font-title);
+    font-family: 'plant', sans-serif;
     padding: 20px;
     color: var(--color-tertiary);
     text-shadow: var(--text-shadow);
@@ -228,7 +228,7 @@ i#burger {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
-    font-family: var(--font-title);
+    font-family: 'plant', sans-serif;
     font-size: 3em;
     color: var(--color-tertiary);
     text-shadow: var(--text-shadow);
@@ -289,7 +289,7 @@ i#burger {
 
 .form-container h3 {
     font-size: 2rem;
-    font-family: var(--font-title);
+    font-family: 'plant', sans-serif;
     font-weight: bolder;
     margin-bottom: 1rem;
     color: var(--color-tertiary);
